@@ -4,17 +4,17 @@ pkgname=kawaii-filesystem
 pkgver=2022.08.25
 pkgrel=1
 pkgdesc='Base MenheraOS files'
+url='https://github.com/LeonidPilyugin/kawaii-filesystem'
 arch=('x86_64')
-license=('GPL')
+license=('GPL3')
 depends=('iana-etc')
 provides=('filesystem=2021.12.07')
 backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/hosts' 'etc/issue' 'etc/ld.so.conf' 'etc/nsswitch.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'
         'etc/shadow' 'etc/shells')
-license=('GPL3')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/LeonidPilyugin/kawaii-filesystem/releases/download/v$pkgver/files.tar.gz")
-sha256sums=('261fe5ffac515d5f0a62625973093c0712f4d365c29642acb02a3a54ce3ac3cb')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
+sha256sums=('3f27345523f0abf86b1b37b7fcb844cbf18d7a26d6c47eecd34f8b8e93a1378c')
 
 package() {
   cd "$pkgdir"

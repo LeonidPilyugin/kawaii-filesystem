@@ -12,7 +12,7 @@ provides=('filesystem=2022.10.18')
 backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/hosts' 'etc/issue' 'etc/ld.so.conf' 'etc/nsswitch.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'
-        'etc/shadow' 'etc/shells' '/etc/subuid' '/etc/subgid')
+        'etc/shadow' 'etc/shells' 'etc/subuid' 'etc/subgid')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
 sha256sums=('d87aa9d814b05bdaff52d7c27655f966ad1a68a7955f6b416af63a3f58448d3d')
 

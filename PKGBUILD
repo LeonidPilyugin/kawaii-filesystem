@@ -8,7 +8,7 @@ url='https://github.com/LeonidPilyugin/kawaii-filesystem'
 arch=('x86_64')
 license=('GPL3')
 depends=('iana-etc')
-provides=('filesystem=2021.12.07')
+provides=('filesystem=2022.10.18')
 backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/hosts' 'etc/issue' 'etc/ld.so.conf' 'etc/nsswitch.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'

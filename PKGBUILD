@@ -14,7 +14,7 @@ backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'
         'etc/shadow' 'etc/shells' 'etc/subuid' 'etc/subgid')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
-sha256sums=('311880b35518689dad5114aa951c70479327ebfa3ffedc1e70c147f8598707d34e0b008fd755fabf5441790b8b76964e427f872c716506c62303716a613addf2')
+sha256sums=('42bbe98642737c21da37eeb26fe9907b2bcc581f195c8720a0cb255be594c2a3')
 
 package() {
   cd "$pkgdir"

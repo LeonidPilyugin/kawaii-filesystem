@@ -102,7 +102,7 @@ package() {
   install -D -m644 "$srcdir"/menhera-logo{.png,.svg,-text.svg,-text-dark.svg,-text.png,-text-dark.png} usr/share/pixmaps
 
   # for plymouth compability
-  ln -s /usr/share/pixmaps/menhera-logo.png /usr/share/pixmaps/archlinux-logo.png
+  ln -s usr/share/pixmaps/menhera-logo.png usr/share/pixmaps/archlinux-logo.png
 }
 
 # vim:set ts=2 sw=2 et:

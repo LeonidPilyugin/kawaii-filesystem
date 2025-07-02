@@ -1,7 +1,7 @@
 # Maintainer: Leonid Pilyugin <l.pilyugin04@gmail.com>>
 
 pkgname=kawaii-filesystem
-pkgver=2023.01.23
+pkgver=2025.07.02
 pkgrel=1
 pkgdesc='Base MenheraOS files'
 url='https://github.com/LeonidPilyugin/kawaii-filesystem'
@@ -14,7 +14,7 @@ backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'
         'etc/shadow' 'etc/shells' 'etc/subuid' 'etc/subgid')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
-sha256sums=('d87aa9d814b05bdaff52d7c27655f966ad1a68a7955f6b416af63a3f58448d3d')
+sha256sums=('d8caed953cddb66a53430e4ecf0d9eec5b8f3b731f1649c8cc25852e0227a74f')
 
 package() {
   cd "$pkgdir"
@@ -100,6 +100,9 @@ package() {
 
   # add logo
   install -D -m644 "$srcdir"/menhera-logo{.png,.svg,-text.svg,-text-dark.svg,-text.png,-text-dark.png} usr/share/pixmaps
+
+  # for plymouth compability
+  ln -s /usr/share/pixmaps/menhera-logo.png /usr/share/pixmaps/archlinux-logo.png
 }
 
 # vim:set ts=2 sw=2 et:

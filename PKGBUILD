@@ -14,7 +14,7 @@ backup=('etc/crypttab' 'etc/fstab' 'etc/group' 'etc/gshadow' 'etc/host.conf'
         'etc/passwd' 'etc/profile' 'etc/resolv.conf' 'etc/securetty'
         'etc/shadow' 'etc/shells' 'etc/subuid' 'etc/subgid')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/LeonidPilyugin/$pkgname/releases/download/v$pkgver/files.tar.gz")
-sha256sums=('d8caed953cddb66a53430e4ecf0d9eec5b8f3b731f1649c8cc25852e0227a74f')
+sha256sums=('b5920423a08f25576f2766d406783c273b9764d313c67b35a2096772b4c5bccc')
 
 package() {
   cd "$pkgdir"
@@ -100,9 +100,7 @@ package() {
 
   # add logo
   install -D -m644 "$srcdir"/menhera-logo{.png,.svg,-text.svg,-text-dark.svg,-text.png,-text-dark.png} usr/share/pixmaps
-
-  # for plymouth compability
-  ln -s usr/share/pixmaps/menhera-logo.png usr/share/pixmaps/archlinux-logo.png
+  install -D -m644 "$srcdir"/archlinux-logo{.png,.svg,-text.svg,-text-dark.svg,-text.png,-text-dark.png} usr/share/pixmaps
 }
 
 # vim:set ts=2 sw=2 et:
